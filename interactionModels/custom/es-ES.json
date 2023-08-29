@@ -1,0 +1,104 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [],
+          "name": "StartBalance",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1562104236177"
+          }
+        },
+        {
+          "slots": [],
+          "name": "testCadira",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1258846437446"
+          }
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "StartBalance",
+          "samples": [
+            "empieza el test de equilibrio"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "continueTest",
+          "samples": [
+            "Fin ejercicio",
+            "Fin paso"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "testCadira",
+          "samples": [
+            "silla",
+            "test de la silla",
+            "Empieza el test de la silla"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "fiCadira",
+          "samples": [
+            "fin silla",
+            "Levantado silla",
+            "Levantado"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "test medición"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Estás seguro?"
+          }
+        ],
+        "id": "Confirm.Intent.1562104236177"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Estás seguro que quieres empezar el test?"
+          }
+        ],
+        "id": "Confirm.Intent.1258846437446"
+      }
+    ]
+  }
+}
